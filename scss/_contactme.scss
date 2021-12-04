@@ -1,0 +1,26 @@
+/* contact me */
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    p{
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
+.location{
+    display: flex;
+    justify-content: center;
+    margin: 30px 20px;
+}
+
+@media screen and (max-width:440px) {
+    #contact-h1{
+        font-size: 6rem;
+    }
+}

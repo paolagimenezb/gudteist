@@ -1,0 +1,50 @@
+@import "_index.scss";
+@import "_products.scss";
+@import "_contactme.scss";
+@import "_signin.scss";
+@import "_footer.scss";
+
+html{
+    font-size: 63.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+
+
+body {
+    background-color:#FAFAED ;
+    font-family: 'prata' , 'serif';
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color:black;
+}
+
+.nav-item a:hover{
+    text-decoration:underline;
+    opacity: 80%;
+    color: black;
+}
+
+.nav-bar-color{
+    background-color: #F7ACD5;
+}
+
+.nav-bar-color a{
+    color:black;
+}
+

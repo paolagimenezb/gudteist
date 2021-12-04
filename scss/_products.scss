@@ -1,0 +1,54 @@
+/* productos */
+
+// .image-product {
+//     height: 350px;
+//     max-width: 350px;
+//     width: 100%;
+//     margin: auto;   
+//     padding: 25px;
+//     transition: all 0.5s; 
+//     &:hover
+//     {transform:scale(1.030);
+//     }
+// }
+
+// .product-container  { margin-bottom: 25px;
+//     h4 { font-size: 1em;
+//     text-align: center;}
+// }
+
+@media screen and (max-width:440px) {
+    .productos{
+        #product-h1{
+            font-size: 6rem !important;
+        }
+    }
+}
+
+.product-display{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(288px, 350px));
+    grid-template-rows: repeat(3, minmax(288px, 350px));
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    img{
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+        min-width: 288px;
+        max-height: 350px;
+    }
+
+    @media screen and (max-width:1250px) {
+        grid-template-columns: repeat(2, minmax(288px, 350px));
+        grid-template-rows: repeat(4, minmax(288px, 350px));
+    }
+
+    @media screen and (max-width:760px) {
+        grid-template-columns: repeat(1, minmax(288px, 350px));
+        grid-template-rows: repeat(9, minmax(288px, 350px));
+
+    }
+}
