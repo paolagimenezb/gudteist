@@ -4,7 +4,9 @@
 @import "_signin.scss";
 @import "_footer.scss";
 
-html{
+@import "_variables.scss"
+
+html {
     font-size: 63.5%;
 }
 
@@ -12,10 +14,8 @@ body{
     font-size: 1.6rem;
 }
 
-
-
 body {
-    background-color:#FAFAED ;
+    background-color: $bg-white;
     font-family: 'prata' , 'serif';
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -41,7 +41,7 @@ a:hover{
 }
 
 .nav-bar-color{
-    background-color: #F7ACD5;
+    background-color: $bg-pink;
 }
 
 .nav-bar-color a{
