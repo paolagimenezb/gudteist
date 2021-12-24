@@ -41,31 +41,36 @@ h3 {
 }
 
 .best-seller {
-    display: flex;
-    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(288px,450px));
+    column-gap: 20px;
     justify-content: center;
-    width: 100%;
-    margin-bottom: 30px;
+    object-fit: cover;
+
     img {
         max-width: 400px;
         min-width: 288px;
         height: auto;
-        width: 80%;
-        margin: 20px;
+        width: 100%;
         transition: all 0.5s;
-        // &:hover{
-        //     transform:scale(1.030);
-        //     }
     }
 
-    @media screen and (max-width:1320px) {
-        .best-seller{
-            width: 100%;
-            margin: 50px;
+    @media screen and (max-width:1070px) {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: minmax(288px,450px);
+        grid-template-rows: repeat(3, auto);
+
+        img{
             max-width: 350px;
+            min-width: 288px;
             height: auto;
+            width: 80%;
+            margin-bottom: 20px;
+            transition: all 0.5s;
         }
         
     }
-    
 }
